@@ -14,6 +14,11 @@
             let total = Number(document.getElementById('option_b_text').value);
             document.getElementById('option_b_result').innerHTML = (total * 0.154136 * 17 * 2 * 40).toLocaleString();
         }
+
+        function calcC() {
+            let total = Number(document.getElementById('option_c_text').value);
+            document.getElementById('option_c_result').innerHTML = (total * 0.1038 * 17 * 2 * 40).toLocaleString();
+        }
     </script>
     
 </head>
@@ -37,6 +42,14 @@
                     <textarea id="option_b_text" style="resize: none; width: 85px; height: 15px;border-radius: 3px;"></textarea> ->
                     <textarea id="option_b_result" style="resize: none; width: 150px; height: 15px;border-radius: 3px;"></textarea>
                     <br><button onclick="calcB()">calc</button>
+                </div>
+                <br><br>
+                <div>
+                    Option C
+                    <br>
+                    <textarea id="option_c_text" style="resize: none; width: 85px; height: 15px;border-radius: 3px;"></textarea> ->
+                    <textarea id="option_c_result" style="resize: none; width: 150px; height: 15px;border-radius: 3px;"></textarea>
+                    <br><button onclick="calcC()">calc</button>
                 </div>
             </div>
         </div>
