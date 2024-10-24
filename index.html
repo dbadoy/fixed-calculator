@@ -7,7 +7,7 @@
     <script>
         function calcA() {
             let total = Number(document.getElementById('option_a_text').value);
-            document.getElementById('option_a_result').innerHTML = (total * 0.191772 * 17 * 2 * 40).toLocaleString();
+            document.getElementById('option_a_result').innerHTML = (total * 0.065802 * 17 * 2 * 40).toLocaleString();
         }
 
         function calcB() {
@@ -18,6 +18,11 @@
         function calcC() {
             let total = Number(document.getElementById('option_c_text').value);
             document.getElementById('option_c_result').innerHTML = (total * 0.1038 * 17 * 2 * 40).toLocaleString();
+        }
+
+        function calcD() {
+            let total = Number(document.getElementById('option_d_text').value);
+            document.getElementById('option_d_result').innerHTML = (total * 0.005732 * 17 * 2 * 40).toLocaleString();
         }
     </script>
     
@@ -50,6 +55,14 @@
                     <textarea id="option_c_text" style="resize: none; width: 85px; height: 15px;border-radius: 3px;"></textarea> ->
                     <textarea id="option_c_result" style="resize: none; width: 150px; height: 15px;border-radius: 3px;"></textarea>
                     <br><button onclick="calcC()">calc</button>
+                </div>
+                <br><br>
+                <div>
+                    Option D
+                    <br>
+                    <textarea id="option_d_text" style="resize: none; width: 85px; height: 15px;border-radius: 3px;"></textarea> ->
+                    <textarea id="option_d_result" style="resize: none; width: 150px; height: 15px;border-radius: 3px;"></textarea>
+                    <br><button onclick="calcD()">calc</button>
                 </div>
             </div>
         </div>
